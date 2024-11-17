@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 1200px;
+    height: 100px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    display: flex;
+    padding: 1rem;
+    background-color: #A0D683;
+    border-radius: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    margin-left: 20px;
+    padding: .5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 18px;
+}
+
+.logo {
+    width: 270px;
+}
+
+.link {
+    transition: 0.5s;
+}
+
+.link:hover {
+    background-color: #FEFF9F;
+    border-radius: 15px;
+}
+
+.container {
+    margin-top: 2rem;
+    /* border: 1px solid red; */
+    display: flex;
+    width: 1200px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.con-left {
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 500px;
+}
+
+.con-right {
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 500px;
+}
+
+.left-text {
+    margin-top: 100px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.text-welcome {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.line1 {
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.text-introduce {
+    font-size: 47px;
+    font-weight: bold;
+}
+
+.text-one {
+    color: #72BF78;
+    /* สีเริ่มต้น */
+    transition: color 0.5s ease;
+    /* ทำให้การเปลี่ยนสีมีความนุ่มนวล */
+}
+
+.text-two {
+    color: #FABB48;
+    /* สีเริ่มต้น */
+    transition: color 0.5s ease;
+    /* ทำให้การเปลี่ยนสีมีความนุ่มนวล */
+}
+
+.profile-img {
+    margin-left: 8rem;
+}
+
+/* ตั้งค่าการซ่อนเริ่มต้น */
+.text-welcome,
+.text-introduce,
+.text-one,
+.profile-img,
+.line1,
+.text-two {
+    opacity: 0;
+    transform: translateY(50px);
+    animation-fill-mode: forwards;
+}
+
+/* กำหนดเอฟเฟคการเด้งขึ้น */
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.text-welcome {
+    animation: bounceIn 1s ease-out 0.5s forwards;
+}
+
+.text-introduce {
+    animation: bounceIn 1s ease-out 1s forwards;
+}
+
+.text-one {
+    animation: bounceIn 1s ease-out 1.5s forwards;
+}
+
+.text-two {
+    animation: bounceIn 1s ease-out 2s forwards;
+}
+
+.profile-img{
+    animation: bounceIn 1s ease-out 1s forwards;
+}
+
+.line1{
+    animation: bounceIn 1s ease-out 0.7s forwards;
+}
+

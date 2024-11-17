@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <title>About</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="img/logoweb.png" alt="  " class="logo"></a>
+        <ul>
+            <li><a href="index.html" class="link">Home</a></li>
+            <li><a href="#" class="link">Certificate</a></li>
+            <li><a href="about.html" class="link">About Me</a></li>
+            <li><a href="#" class="link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="about-container">
+        <div class="about-img">
+            <img src="img/proflie.jpg" alt="  " width="250">
+        </div>
+        <div class="about-detail">
+            <div class="detail-con">
+                <div class="category">
+                    <h3>ประวัติส่วนตัว</h3>
+                    <p><span>ชื่อ:</span> นายกฤษณภูมิ จรีอาภาภรณ์</p>
+                    <p><span>ชื่อเล่น:</span> อาร์ม</p>
+                    <p><span>วันเกิด:</span> 2 กรกฎาคม พ.ศ.2546</p>
+                    <p><span>ที่อยู่:</span> 115/1 ต.สันปูเลย อ.ดอยสะเก็ด จ.เชียงใหม่ 50220</p>
+                </div>
+
+                <div class="category">
+                    <h3>ประวัติการศึกษา</h3>
+                    <p><span>ปวช:</span> วิทยาลัยเทคโนโลยีพาณิชยการลานนา เชียงใหม่</p>
+                    <p><span>สาขา:</span> ภาษาต่างประเทศธุรกิจ <br> (Forein Lannguage For Business)</p>
+                    <p><span>ปวส:</span> วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่</p>
+                    <p><span>สาขา:</span> เทคโนโลยีสารสนเทศ (Information Technology)</p>
+                </div>
+                <div class="category">
+                    <h3>ความสามารถ</h3>
+                    <p><span>ด้านภาษา:</span> อังกฤษ(สื่อสารได้ดี) จีน(มีพื้นฐาน)</p>
+                    <p><span>ด้านไอที:</span> HTML , CSS , JAVASCRIPT , PHP<br> MY SQL , C# </p>
+                    <p><span>ด้านดนตรี:</span> ร้องเพลง กีต้าร์ </p>
+                </div>
+                <div class="category">
+                    <h3>ประวัติการฝึกงาน</h3>
+                    <p>โรงแรมธารินทร์ เชียงใหม่ <br><span>ตำแหน่ง :</span>พนักงานห้องอาหาร</p>
+                    <p><span>ระยะเวลา:</span> 3 เดือน </p>
+
+                    <p>บริษัท เอกะ อะโกร <br><span>ตำแหน่ง :</span>IT SUPPORT & SOFTWERE INTERNSHIP</p>
+                    <p><span>ระยะเวลา:</span> 2 เดือน </p>
+                </div>
+
+                <div class="category">
+                    <h3>ปัจจุบันศึกษาอยู่</h3>
+                    <h4>มหาวิทยาลัยแม่โจ้ วิทยาเขต เชียงใหม่</h4>
+                    <h4>คณะสารสนเทศและการสื่อสาร</h4>
+                    <h4>วิชาเอก สื่อเศรษฐกิจสร้างสรรค์ (CMT)</h4>
+                    <p><span>ชั้นปีที่:</span> 3 </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('load', function () {
+            // เลือกวัตถุที่ต้องการเลื่อนขึ้น
+            const elements = document.querySelectorAll('.about-container, .about-img, .about-detail');
+
+            // เพิ่มคลาส show ให้กับแต่ละวัตถุ
+            elements.forEach(element => {
+                element.classList.add('show');
+            });
+        });
+
+    </script>
+</body>
+
+</html>
